@@ -1,0 +1,21 @@
+name: EForecast
+channels:
+  - conda-forge
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.7
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - dask
+  - tensorflow-gpu=1.15
+  - keras
+  - scikit-learn
+  - requests
+  - joblib
+  - pip
+  - pip:
+    - amphoradata
+  - pandas
+  - holidays
