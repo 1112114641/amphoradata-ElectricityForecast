@@ -403,16 +403,21 @@ def MSE_CNN(predictions, true_values):
     """
     calculates the error per returned
 
+<<<<<<< HEAD:src/tool.py
 <<<<<<< HEAD:1_modules/modules/tool.py
     returns mse np.array, rel error np.array 
 >>>>>>> Markus edits (#4)
 =======
     returns mse np.array, rel error np.array
 >>>>>>> included load_data in src:src/tool.py
+=======
+    returns mse np.array, rel error np.array
+>>>>>>> 2080800... included load_data in src:1_modules/modules/tool.py
     """
     predictions = pd.DataFrame(predictions)
     predictions.columns = true_values.columns
     predictions.index = true_values.index
+<<<<<<< HEAD:src/tool.py
 <<<<<<< HEAD:1_modules/modules/tool.py
 <<<<<<< HEAD
 
@@ -425,6 +430,9 @@ def MSE_CNN(predictions, true_values):
 =======
 
 >>>>>>> included load_data in src:src/tool.py
+=======
+
+>>>>>>> 2080800... included load_data in src:1_modules/modules/tool.py
     mse = round(np.mean((predictions - true_values)**2),3)
     rel = round(np.mean(100*np.abs((predictions-true_values)/true_values)),3)
 
@@ -435,6 +443,7 @@ def MSE_CNN_2(predictions, true_values):
     """
     calculates the error per returned
 
+<<<<<<< HEAD:src/tool.py
 <<<<<<< HEAD:1_modules/modules/tool.py
 <<<<<<< HEAD
     returns mae np.array, rel error np.array
@@ -444,6 +453,9 @@ def MSE_CNN_2(predictions, true_values):
 =======
     returns mse np.array, rel error np.array
 >>>>>>> included load_data in src:src/tool.py
+=======
+    returns mse np.array, rel error np.array
+>>>>>>> 2080800... included load_data in src:1_modules/modules/tool.py
     """
     predictions = pd.DataFrame(predictions)
     predictions.index = true_values.index
@@ -451,6 +463,7 @@ def MSE_CNN_2(predictions, true_values):
 
     mse = round(np.mean((predictions - true_values)**2),3)
     rel = round(np.mean(100*np.abs((predictions-true_values)/true_values)),3)
+<<<<<<< HEAD:src/tool.py
 <<<<<<< HEAD:1_modules/modules/tool.py
 <<<<<<< HEAD
 
@@ -460,6 +473,9 @@ def MSE_CNN_2(predictions, true_values):
 =======
 
 >>>>>>> included load_data in src:src/tool.py
+=======
+
+>>>>>>> 2080800... included load_data in src:1_modules/modules/tool.py
     return mse, rel
 >>>>>>> Markus edits (#4)
 
@@ -489,6 +505,7 @@ def MSE_NN_3(predictions, true_values):
     """
     calculates the error per returned
 
+<<<<<<< HEAD:src/tool.py
 <<<<<<< HEAD:1_modules/modules/tool.py
 <<<<<<< HEAD
     returns mae np.array, rel error np.array
@@ -498,12 +515,16 @@ def MSE_NN_3(predictions, true_values):
 =======
     returns mse np.array, rel error np.array
 >>>>>>> included load_data in src:src/tool.py
+=======
+    returns mse np.array, rel error np.array
+>>>>>>> 2080800... included load_data in src:1_modules/modules/tool.py
     """
     predictions = [predictions[_].reshape((len(predictions[_],))) for _ in range(len(predictions))]
 
     df = pd.DataFrame([*predictions]).T
     df.columns = true_values.columns
     df.index = true_values.index
+<<<<<<< HEAD:src/tool.py
 <<<<<<< HEAD:1_modules/modules/tool.py
 <<<<<<< HEAD
 
@@ -516,6 +537,9 @@ def MSE_NN_3(predictions, true_values):
 =======
 
 >>>>>>> included load_data in src:src/tool.py
+=======
+
+>>>>>>> 2080800... included load_data in src:1_modules/modules/tool.py
     mse = round(np.mean((predictions - true_values)**2),3)
     rel = round(np.mean(100*np.abs((predictions-true_values)/true_values)),3)
 
